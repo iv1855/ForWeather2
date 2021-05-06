@@ -6,11 +6,118 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextViewCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="AutoCompleteTextView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCenterVert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/textViewLabelID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/id_City"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCenterVert"
+        app:layout_constraintTop_toBottomOf="@+id/autoCompleteTextViewCity" />
+
+    <TextView
+        android:id="@+id/textViewID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCenterVert"
+        app:layout_constraintTop_toBottomOf="@+id/autoCompleteTextViewCity" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHoriz1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/textViewLabelTotalDBRecords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/total_count_records_db"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCenterVert"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHoriz1" />
+
+    <TextView
+        android:id="@+id/textViewTotalDBRecords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCenterVert"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHoriz1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHoriz2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <Button
+        android:id="@+id/buttonAddCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/label_add_city"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCenterVert"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHoriz2" />
+
+    <Button
+        android:id="@+id/buttonDeleteCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/label_remove_city"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCenterVert"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHoriz2" />
+
+    <Button
+        android:id="@+id/buttonGoControlPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/label_go_to_control_panel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/faButtonShowWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCenterVert"
+        app:layout_constraintTop_toBottomOf="@+id/textViewID"
+        app:srcCompat="@android:drawable/presence_video_online"
+        android:focusable="true" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

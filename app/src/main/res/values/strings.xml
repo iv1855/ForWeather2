@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ForWeather2</string>
+    <string name="id_City">ID города</string>
+    <string name="total_count_records_db">Всего записей в БД</string>
+    <string name="label_add_city">Добавить город</string>
+    <string name="label_remove_city">Удалить город</string>
+    <string name="label_go_to_control_panel">Перейти в панель управления</string>
 </resources>
