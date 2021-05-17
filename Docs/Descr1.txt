@@ -33,3 +33,7 @@
   - загрузить в БД данные за сегодня
   - загрузить в БД данные за пред. 3 дня
   - очистить все данные
+
+
+  https://api.openweathermap.org/data/2.5/weather?q=%D0%A1%D0%B0%D1%80%D0%B0%D1%82%D0%BE%D0%B2&appid=e3df956e198678d4e84e813a2404d9db&lang=ru&units=metric
+  https://api.openweathermap.org/data/2.5/weather?q=%D0%9A%D0%B0%D0%B8%D1%80&appid=e3df956e198678d4e84e813a2404d9db&lang=ru&units=metric

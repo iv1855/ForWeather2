@@ -80,7 +80,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="0"
+        android:layout_marginTop="8dp"
         android:text="Загрузить данные за 3 дня"
         app:layout_constraintStart_toEndOf="@+id/buttonLoadDataToday"
         app:layout_constraintTop_toTopOf="@+id/buttonLoadDataToday" />

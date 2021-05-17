@@ -114,10 +114,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:clickable="true"
+        android:focusable="true"
+        android:onClick="onClickShowWeather"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guidelineVert"
         app:layout_constraintTop_toBottomOf="@+id/textViewIdCity"
-        app:srcCompat="@android:drawable/presence_video_online"
-        android:focusable="true" />
+        app:srcCompat="@android:drawable/presence_video_online" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
